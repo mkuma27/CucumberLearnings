@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: awesomecucumber.Runner.JUnitRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.862 sec <<< FAILURE!
+Add Product from Store page(Add to Cart)  Time elapsed: 0.411 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'I see 1 "Blue Shoes" to the cart' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("I see {int} {string} to the cart")
+public void i_see_to_the_cart(Integer int1, String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

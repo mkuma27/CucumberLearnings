@@ -1,0 +1,15 @@
+mvn clean test -Dcucumber.execution.dry-run=true -Dcucumber.plugin=pretty
+>mvn clean test -Dcucumber.execution.dry-run=true -Dcucumber.plugin=pretty -Dcucumber.filter.tags=@scenario1
+
+
+tags="@scenario1 and @scenario2" ->It will trigger only tose scenarios which has both the tags
+tags="@scenario1 or @scenario2" ->It will trigger only those scenarios which has either of any 1 tag
+tags="@scenario1 and not @scenario2"  -> It will trigger scenario1 and not scenario2
+
+
+
+
+
+
+
+plugin={"pretty","html:tagret/cucumber.html"}
